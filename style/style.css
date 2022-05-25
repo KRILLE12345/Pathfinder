@@ -3,7 +3,13 @@ body {
     margin: 0;
 }
 
-.container {
+* {
+    outline: none;
+    padding: 0;
+    margin: none;
+}
+
+#container {
     position: absolute;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -20,4 +26,26 @@ body {
     background-color: aqua;
     /* padding: 1vw; */
     border: 1px solid black;
+}
+
+.options {
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, 0);
+}
+
+input[type="number"] {
+    width: 8vw;
+    height: 3vh;
+    border: none;
+    background-color: beige;
+    text-align: center;
+}
+
+button {
+    width: 8vw;
+    height: 3vh;
+    border: none;
+    background-color: beige;
 }
