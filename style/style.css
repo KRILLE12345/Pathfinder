@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    background-color: aliceblue;
 }
 
 * {
@@ -19,19 +20,28 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: red;
+    background-color: rgb(145, 145, 145);
+    /* border: 0.15vw solid rgb(61, 61, 61); */
 }
 
 .item {
-    background-color: aqua;
+    background-color: #cccccc;
     /* padding: 1vw; */
-    border: 1px solid black;
+    border: 0.075vw solid #000000;
+}
+
+.start {
+    background-color: green;
+}
+
+.end {
+    background-color: red;
 }
 
 .options {
     position: absolute;
     left: 50%;
-    top: 10%;
+    top: 5%;
     transform: translate(-50%, 0);
 }
 
@@ -39,13 +49,21 @@ input[type="number"] {
     width: 8vw;
     height: 3vh;
     border: none;
-    background-color: beige;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    border: 0.1vw solid rgb(68, 68, 68);
     text-align: center;
 }
 
 button {
     width: 8vw;
     height: 3vh;
+    background-color: aliceblue;
     border: none;
-    background-color: beige;
+    /* border-bottom: 0.1vw solid rgb(68, 68, 68); */
+}
+
+button:hover {
+    border-bottom: 0.1vw solid rgb(68, 68, 68);
 }
